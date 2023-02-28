@@ -1,0 +1,27 @@
+@use "../custom" as *;
+@use "../mixins" as m;
+
+/* One page image */
+.notavif.notwebp .bg-onePage {
+  @include m.bgImage("../img/site-singlepage.jpg", $bg-color-alpha, 0);
+}
+.webp .bg-onePage {
+  @include m.bgImage("../img/site-singlepage.webp", $bg-color-alpha, 0);
+}
+.avif .bg-onePage {
+  @include m.bgImage("../img/site-singlepage.avif", $bg-color-alpha, 0);
+}
+
+.notavif.notwebp.bg-multipage {
+  @include m.bgImage("../img/site-multipage.jpg", $bg-color-alpha, 0);
+}
+
+.webp .bg-multipage {
+  @include m.bgImage("../img/site-multipage.webp", $bg-color-alpha, 0);
+}
+
+.avif .bg-multipage {
+  @include m.bgImage("../img/site-multipage.avif", $bg-color-alpha, 0);
+}
+
+/* multipage image */

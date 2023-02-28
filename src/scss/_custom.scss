@@ -1,0 +1,67 @@
+//Colors
+$primary: rgb(217, 0, 98);
+$primary-alpha: rgba(217, 0, 98, 0.75);
+$secondary: rgb(20, 25, 55);
+$secondary-alpha: rgba(20, 25, 55, 0.75);
+$third: rgb(90, 20, 100);
+$third-alpha: rgba(90, 20, 100, 0.75);
+$bg-color: rgb(245, 245, 245);
+$bg-color-alpha: rgba(245, 245, 245, 0.75);
+$dark: $secondary;
+$white: #fff;
+
+//Tipografia
+$font-family-sans-serif: "Raleway", sans-serif;
+$headings-font-weight: 700;
+$headings-font-weight: 400;
+
+//navbar
+$navbar-dark-color: $primary;
+$navbar-dark-hover-color: $white;
+$navbar-toggler-focus-width: none;
+
+//links
+$link-color: rgb(80, 158, 227);
+$link-hover-color: $primary;
+
+//Dropdwon
+$dropdown-link-color: $primary;
+$dropdown-bg: $secondary;
+$dropdown-link-hover-bg: $primary;
+$dropdown-link-hover-color: $white;
+
+//cards
+$card-border-width: 0;
+
+//carousel
+$carousel-control-color: $primary;
+
+//css grid
+$enable-cssgrid: true;
+
+//css row
+$grid-gutter-width: 0;
+
+//Inputs
+$input-focus-box-shadow: none;
+$input-focus-border-color: none;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* My styles */
+.gradient-y {
+  @include gradient-y(rgba(28, 118, 173, 0.92), rgba(83, 184, 152, 1));
+}
+
+.bg-secondary-alpha-color {
+  background-color: $secondary-alpha;
+}
+
+textarea.mensaje {
+  min-height: 6rem;
+}
+
+.carousel-caption {
+  z-index: 1;
+  @extend .bg-secondary-alpha-color;
+}

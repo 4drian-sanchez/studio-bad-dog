@@ -1,0 +1,19 @@
+@use "../custom" as *;
+
+.container {
+  @include make-container();
+  width: 90%;
+  max-width: map-get($map: $container-max-widths, $key: xxl);
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.bg-thrid {
+  background-color: $third;
+}
+
+.text-third {
+  color: $third;
+}
